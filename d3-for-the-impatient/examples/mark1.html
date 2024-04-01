@@ -18,6 +18,7 @@
     img {
       background-color: white; /* Set the background color to white */
       position: relative; /* Set position to relative */
+      border: none; /* Remove the border */
     }
     
     svg {
@@ -30,54 +31,50 @@
       fill: green; /* Set arrow color */
     }
 
-    #buttonContainer {
+    .node {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
-    }
-    
-    #animationControl {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
+      padding: 5px;
       border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease; /* Adding transition effect */
+    }
+
+    .node div {
+      font-size: 12px; /* Adjust the font size as needed */
     }
   </style>
 </head>
 <body>
-  <img id="leftRouter" src="gnode.png" alt="Left Image Description">
-  <svg id="connectionLine" width="100%" height="100%">
-    <line id="line" stroke="green" stroke-width="4"/>
-    <defs>
-      <marker id="arrow" viewBox="0 0 30 30" refX="15" refY="15" markerWidth="20" markerHeight="20" orient="auto-start-reverse">
-        <path class="arrow" d="M 0 0 L 30 15 L 0 30 z"/>
-      </marker>
-    </defs>
-  </svg>
-  <img id="rightRouter" src="gnode.png" alt="Right Image Description">
-  <!-- <button id="lowerLeftButton" style="position: absolute; bottom: 20px; left: 20px;">Lower Left Button</button> -->
-  <div id="buttonContainer">
-    <button id="animationControl">Start Animation</button>
+  <!-- Nodes -->
+  <div id="node1" class="node" style="left: 1225px; top: 455px;">
+    <img src="gnode.png" alt="ATB-8" width="50" height="50">
+    <div>ATB-8</div>
   </div>
+  <div id="node2" class="node" style="left: 1005px; top: 455px;">
+    <img src="gnode.png" alt="ATB-9" width="50" height="50">
+    <div>ATB-9</div>
+  </div>
+  <div id="node3" class="node" style="left: 785px; top:455px;">
+    <img src="gnode.png" alt="ATB-7" width="50" height="50">
+    <div>ATB-7</div>
+  </div>
+  <div id="node4" class="node" style="left: 565px; top: 455px;">
+    <img src="gnode.png" alt="ATB-6" width="50" height="50">
+    <div>ATB-6</div>
+  </div>
+  <div id="node5" class="node" style="left: 640px; top: 190px;">
+    <img src="gnode.png" alt="ATB-3" width="50" height="50">
+    <div>ATB-3</div>
+  </div>
+  <div id="node6" class="node" style="left: 895px; top: 170px;">
+    <img src="gnode.png" alt="ATB-5" width="50" height="50">
+    <div>ATB-5</div>
+  </div>
+  <div id="node7" class="node" style="left: 1175px; top: 190px;">
+    <img src="gnode.png" alt="ATB-4" width="50" height="50">
+    <div>ATB-4</div>
+  </div>
+  
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
-    // Function to handle button click
-    document.getElementById('animationControl').addEventListener('click', function() {
-      // Append arrow markers along the line
-      for (var i = 0; i < numArrows; i++) {
-        var arrow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        arrow.setAttribute('class', 'arrow');
-        arrow.setAttribute('d', 'M 0 -15 L 30 0 L 0 15 z'); // Larger arrow path
-        arrow.setAttribute('transform', 'translate(' + (x1 + i * arrowSpacing) + ',' + y1 + ')');
-        arrowGroup.appendChild(arrow);
-      }
-      svg.appendChild(arrowGroup);
-      animateTraffic();
-    });
-
     // Get the positions of the left and right routers
     var leftRouter = document.getElementById('leftRouter');
     var rightRouter = document.getElementById('rightRouter');
@@ -121,9 +118,6 @@
           animateTraffic();
         });
     }
-    
-  
-
   </script>
 </body>
 </html>
