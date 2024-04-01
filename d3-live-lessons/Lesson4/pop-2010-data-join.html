@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style type="text/css">
+       body{
+           font-family: Helvetica;
+           text-anchor:middle;
+       }
+       .axis{
+           stroke: black;
+           stroke-width: 1px;
+       }
+       .bar{
+           fill:darkslateblue
+       }
+       .bar-label {
+           text-anchor: end;
+       }
+       .top-label {
+           font-size: 13px;
+           font-style: italic;
+           text-transform: uppercase;
+           float: left;
+       }
+       .age-label {
+           text-align: right;
+           font-weight: bold;
+           width: 90px;
+           padding-right: 10px;
+       }
+       .clearfix {
+           clear: both;
+       }
+       .axis-label {
+           text-anchor: middle;
+           font-size: 13px;
+       }
+   </style>
+</head>
+<body>
+    <h2>Age distribution of the world, 2010</h2>
+	<div class="top-label age-label">
+		<p>age group</p>
+	</div>
+	<div class="top-label">
+		<p>portion of the population</p>
+	</div>
+	<div class="clearfix"></div>
+<script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+<script>
+    var popData = [1.56660059,1.46815437,2.07998462,2.55578227,3.38835387,4.48430552,5.09808117,5.95869491,6.64096962,7.06784271,7.27525383,8.08969456,8.92680256,8.76286712,8.56970012,8.78200696,9.28490519]
+
+    var labelData =['80 and up','75 - 79','70 - 74','65 - 69',
+            '60 - 64','55 - 59','50 - 54','45 - 49',
+            '40 - 44','35 - 39','30 - 34','25 - 29',
+            '20 - 24','15 - 19','10 - 14','5 - 9','0 - 4']
+
+    var tickData = [0, 2.5, 5.0, 7.5]
+
+    var svg = d3.select('body')
+        .append('svg')
+            .attr('height',500)
+            .attr('width',500)
+    
+    var barGroup = svg.append('g')
+        .attr('transform', 'translate(100,30) scale(43.1,1)')
+        .attr('class', 'bar')
+
+    barGroup.selectAll('rect')
+        .data(popData)
+        .enter().append('rect')
+        .attr('x',0)
+        .attr('y',function(d,i) {return i*25;})
+        .attr('height',20)
+        .attr('width',function(d){return d;});
+
+    var labelGroup = svg.append('g')
+        .attr('transform','translate(90,30)')
+        .attr('class','bar-label')
+
+    labelGroup.selectAll('text')
+        .data(labelData)
+        .enter().append('text')
+        .attr("x",0)
+        .attr('y',function(d,i) {return i*25 + 15; })
+        .text(function(d) {return d;})
+
+    var tickGroup = svg.append('g')
+        .attr('transform','translate(100,30)')
+        .attr('class','axis');
+
+    tickGroup.selectAll('line')
+            .data(tickData)
+        .enter().append('line')
+            .attr('x1',function(d) {return d * 43;})
+            .attr('x2',function(d) {return d * 43;})
+            .attr('y1',0)
+            .attr('y2',-10)
+
+    var tickLabelGroup = svg.append('g')
+        .attr('transform','translate(100,30)')
+        .attr('class','axis-label');
+    
+    tickLabelGroup.selectAll('text')
+            .data(tickData)
+        .enter().append('text')
+            .attr('x', function(d,i) {return 107.5*i})
+            .attr('y',-15)
+            .text(function(d) {
+                if(d===0) { return d; }
+                return d.toFixed(1) + "%";})
+</script>
+</body>
+</html>

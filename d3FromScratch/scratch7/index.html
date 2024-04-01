@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Live Plot Example</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        // set up the dimensions of the chart
+        var margin = {top: 20, right: 20, bottom: 30, left: 50},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        // set up the x and y scales
+        var x = d3.scaleLinear()
+            .domain([0, 10])
+            .range([0, width]);
+
+        var y = d3.scaleLinear()
+            .domain([0, 10])
+            .range([height, 0]);
+
+        // create the svg element for the chart
+        var svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // set up the initial data
+        var data = [
+            {"x": 0, "y": 2, "z": 1}
+        ];
+
+        // create the line for the data
+        var line = d3.line()
+            .x(function(d) { return x(d.x); })
+            .y(function(d) { return y(d.y); });
+
+        // create the path element for the line
+        var path = svg.append("path")
+            .datum(data)
+            .attr("class", "line")
+            .attr("d", line);
+
+        // update the data every second
+        setInterval(function() {
+            d3.json("http://127.0.0.1:5000/api/data", function(error, newData) {
+                if (error) throw error;
+                data.push(newData);
+                path.datum(data)
+                    .attr("d", line);
+            });
+        }, 1000);
+    </script>
+</body>
+</html>

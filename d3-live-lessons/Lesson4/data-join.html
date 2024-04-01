@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+<script>
+    var svg = d3.select('body')
+        .append('svg')
+            .attr('width', 500)
+            .attr('height', 500);
+
+    var myArray = [10, 20, 30]
+
+    svg.selectAll('circle')
+            .data(myArray)
+        .enter().append('circle')
+            // .attr('cx', 30)
+            // .attr('cy', function(d,i){ 
+            //     return d*(i+1);})
+            // .attr('r', function(d) {return d;});
+</script>
+</body>
+</html>

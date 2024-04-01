@@ -1,0 +1,26 @@
+bytes in and out
+
+127.0.0.1:46005/status-api.html
+
+interface info
+api/state/interfaceinfo.json
+api/stats/rates.json
+
+packetsPerSec
+
+helper scripts
+grep -r "curl" *.sh
+atb_query_api.sh
+mmc_query+api.sh
+
+genip 4700
+MMC-s 4699
+
+paceconfig.json
+
+activepace.json
+
+vim mmc_
+
+
+

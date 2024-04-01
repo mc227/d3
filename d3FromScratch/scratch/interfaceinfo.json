@@ -1,0 +1,94 @@
+{
+    "interfaceinfo": [
+      { "node": "eth4",
+      "info": {
+        "identity": {
+          "networkDomain": "LAN",
+          "interfaceName": "eth4",
+          "radioType": "LAN",
+          "identifier": "WIN-T",
+          "ipAddress": "10.0.4.3"
+        },
+        "hostIdentity": {
+          "interfaceName": "eth2",
+          "ipAddress": "192.167.1.1",
+          "subnetMask": "255.255.255.0",
+          "gatewayIpAddress": ""
+        },
+        "quality": {
+          "nasMetrics": {
+            "hasQuality": true,
+            "quality": 100.0,
+            "confidence": 100.0,
+            "hasBandwidth": false,
+            "bandwidthConfidence": 0.0,
+            "bandwidth": -1,
+            "referenceBandwidth": -1
+          }
+        }
+      }},
+      { 
+        "node": "eth5",
+        "info": {
+          "identity": {
+            "networkDomain": "SATELLITE",
+            "interfaceName": "eth5",
+            "radioType": "BFT2",
+            "identifier": "BFT",
+            "ipAddress": "10.0.5.3"
+          },
+          "hostIdentity": {
+            "interfaceName": "eth1",
+            "type": "BFT2",
+            "ipAddress": "192.168.0.2",
+            "subnetMask": "255.255.255.0",
+            "radioAddress": "192.168.0.4"
+          },
+          "quality": {
+            "nasMetrics": {
+              "hasQuality": true,
+              "quality": 100.0,
+              "confidence": 100.0,
+              "hasBandwidth": false,
+              "bandwidthConfidence": 0.0,
+              "bandwidth": -1,
+              "referenceBandwidth": -1
+            }
+          }
+        }},
+      { "node": "eth70",
+      "info": {
+        "identity": {
+          "networkDomain": "RADIO",
+          "interfaceName": "eth70",
+          "radioType": "TSM",
+          "identifier": "BDE TSM",
+          "ipAddress": "10.0.70.3"
+        },
+        "hostIdentity": {
+          "interfaceName": "eth3",
+          "type": "AN/PRC-148C",
+          "ipAddress": "10.4.101.1",
+          "subnetMask": "255.255.0.0",
+          "gatewayIpAddress": "10.4.100.1"
+        },
+        "quality": {
+          "nasMetrics": {
+            "hasQuality": true,
+            "quality": 86.6,
+            "confidence": 99.9,
+            "hasBandwidth": true,
+            "bandwidthConfidence": 100.0,
+            "bandwidth": 115,
+            "referenceBandwidth": 1410065
+          },
+          "rasTSMMetrics": {
+            "hasQuality": true,
+            "networkQuality": 88.0,
+            "neighborQuality": 86.0
+          }
+        }
+      }}
+    ]
+  }
+  

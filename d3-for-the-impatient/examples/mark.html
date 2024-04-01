@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Centered PNG Images with Connection Line</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      padding: 0 20px; /* Adjust as needed */
+      position: relative; /* Make the body a positioning context */
+    }
+    
+    img {
+      background-color: white; /* Set the background color to white */
+      position: relative; /* Set position to relative */
+    }
+    
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .arrow {
+      fill: green; /* Set arrow color */
+    }
+  </style>
+</head>
+<body>
+  <img id="leftRouter" src="gnode.png" alt="Left Image Description">
+  <svg id="connectionLine" width="100%" height="100%">
+    <line id="line" stroke="green" stroke-width="4"/>
+    <defs>
+      <marker id="arrow" viewBox="0 0 30 30" refX="15" refY="15" markerWidth="20" markerHeight="20" orient="auto-start-reverse">
+        <path class="arrow" d="M 0 0 L 30 15 L 0 30 z"/>
+      </marker>
+    </defs>
+  </svg>
+  <img id="rightRouter" src="gnode.png" alt="Right Image Description">
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    // Get the positions of the left and right routers
+    var leftRouter = document.getElementById('leftRouter');
+    var rightRouter = document.getElementById('rightRouter');
+    var leftRect = leftRouter.getBoundingClientRect();
+    var rightRect = rightRouter.getBoundingClientRect();
+    
+    // Calculate the coordinates for the line
+    var x1 = leftRect.right;
+    var y1 = leftRect.top + (leftRect.height / 2);
+    var x2 = rightRect.left;
+    var y2 = rightRect.top + (rightRect.height / 2);
+    
+    // Set the line coordinates
+    var line = document.getElementById('line');
+    line.setAttribute('x1', x1);
+    line.setAttribute('y1', y1);
+    line.setAttribute('x2', x2);
+    line.setAttribute('y2', y2);
+    
+    // Define animation variables
+    var svg = document.getElementById('connectionLine');
+    var arrowGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    var numArrows = 20; // Number of arrows to animate
+    var arrowSpacing = (x2 - x1) / numArrows; // Spacing between arrows
+    
+    // Append arrow markers along the line
+    for (var i = 0; i < numArrows; i++) {
+      var arrow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      arrow.setAttribute('class', 'arrow');
+      arrow.setAttribute('d', 'M 0 -15 L 30 0 L 0 15 z'); // Larger arrow path
+      arrow.setAttribute('transform', 'translate(' + (x1 + i * arrowSpacing) + ',' + y1 + ')');
+      arrowGroup.appendChild(arrow);
+    }
+    svg.appendChild(arrowGroup);
+    
+    // Function to animate traffic flowing
+    function animateTraffic() {
+      d3.selectAll('.arrow')
+        .transition()
+        .duration(2000)
+        .attrTween('transform', function() {
+          return function(t) {
+            return 'translate(' + (x1 + t * (x2 - x1)) + ',' + y1 + ')';
+          };
+        })
+        .on('end', function() {
+          // Restart the animation
+          d3.select(this).attr('transform', 'translate(' + x1 + ',' + y1 + ')');
+          animateTraffic();
+        });
+    }
+    
+    // Start the animation
+    animateTraffic();
+  </script>
+</body>
+</html>

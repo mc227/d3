@@ -1,0 +1,7 @@
+I just need to stand it up.
+
+- mock the server.
+    - mock MMC1 api rates
+    - mock MMC1 api info.txt
+- plot the static data base
+- see if you can make the data dynamic and if the plot changes

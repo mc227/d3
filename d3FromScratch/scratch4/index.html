@@ -1,0 +1,93 @@
+<!-- The code above is a complete HTML file that includes D3.js library 
+  and defines an empty SVG element for a line chart. 
+  It also includes JavaScript code that fetches data from the Twitter API every minute, 
+  updates the data array, and updates the x and y domains and the chart line accordingly. 
+  However, the line element itself is not initially created, and the code that updates 
+  it is commented out. Therefore, the chart is not initially 
+  visible but should be updated with data after the first minute. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Live D3 Line Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <script>
+      // Define the SVG element dimensions
+      const margin = {top: 20, right: 20, bottom: 30, left: 40};
+      const width = 960 - margin.left - margin.right;
+      const height = 500 - margin.top - margin.bottom;
+
+      // Define the x and y scales
+      const x = d3.scaleTime()
+        .range([0, width]);
+      const y = d3.scaleLinear()
+        .range([height, 0]);
+
+      // Define the line function
+      const line = d3.line()
+        .x(d => x(d.date))
+        .y(d => y(d.count));
+
+      // Create the SVG element for the chart
+      const svg = d3.select("#chart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      // Add the x and y axes
+      const xAxis = d3.axisBottom(x);
+      const yAxis = d3.axisLeft(y);
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", `translate(0,${height})`)
+        .call(xAxis);
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+
+      // Define the data array
+      let data = [];
+
+      // Fetch data and update chart every minute
+      setInterval(() => {
+        fetch(`https://api.twitter.com/2/tweets/search/recent?query=%23${encodeURIComponent('WWE')}&max_results=100&tweet.fields=created_at&expansions=author_id&user.fields=username`, {
+          headers: {
+            'Authorization': 'AAAAAAAAAAAAAAAAAAAAAOw4lwEAAAAA1nfv3J%2BcjSlqZ9tMda%2FHPdB1BYc%3DEiM4h6zOcxmD4JxQrmmzGiMxIWqgcOlNzwSyXmYWIjoEAclH6L'
+          }
+        })
+          .then(response => response.json())
+          .then(json => {
+            const tweetCount = json.meta.result_count;
+            const timestamp = new Date();
+            data.push({
+              date: timestamp,
+              count: tweetCount
+            });
+            if (data.length > 100) {
+              data.shift();
+            }
+            x.domain(d3.extent(data, d => d.date));
+            y.domain([0, d3.max(data, d => d.count)]);
+            svg.select(".x.axis")
+              .transition()
+              .duration(1000)
+              .call(xAxis);
+            svg.select(".y.axis")
+              .transition()
+              .duration(1000)
+              .call(yAxis);
+            svg.select(".line")
+              .datum(data)
+              .transition()
+              .duration(1000)
+              .attr("d", line);
+          });
+      }, 60000);
+    </script>
+  </body>
+</html>

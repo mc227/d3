@@ -1,0 +1,29 @@
+{
+    "rates":[
+        {
+            "eth5": {
+            "packetsPerSec": 0.0,
+            "bytesPerSec": 0.0
+        },
+            "VMF:reflected": {
+            "packetsPerSec": 0.0,
+            "bytesPerSec": 0.0
+    },
+    "eth71": {
+      "packetsPerSec": 0.667,
+      "bytesPerSec": 191.667
+    },
+    "SDSA:eth5": {
+      "packetsPerSec": 0.0,
+      "bytesPerSec": 0.0
+    },
+    "reflected": {
+      "packetsPerSec": 0.0,
+      "bytesPerSec": 0.0
+    },
+    "TAK_PROTO": {
+      "packetsPerSec": 0.667,
+      "bytesPerSec": 191.667
+    }
+  }]
+}

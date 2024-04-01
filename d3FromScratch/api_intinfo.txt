@@ -1,0 +1,1064 @@
+
+MMC01
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "ipAddress": "192.167.1.1",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BDE TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.4.101.1",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.4.100.1"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.6,
+          "confidence": 99.9,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "TSM",
+        "identifier": "BN-1 TSM",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.5.101.1",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.4,
+          "confidence": 99.8,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 110,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 86.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth72",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth72",
+        "radioType": "SILVUS",
+        "identifier": "BN-1 SILVUS",
+        "ipAddress": "10.0.72.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth5",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.111.16.101",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 4017,
+          "referenceBandwidth": 1410065
+        },
+        "rasSilvusMetrics": {
+          "hasQuality": false,
+          "localNoiseLevel": 0.0,
+          "neighborQuality": 0.0
+        }
+      }
+    }
+  }
+]
+MMC03
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "ipAddress": "192.167.1.3",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BN-1 TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.5.101.3",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.5.100.3"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.4,
+          "confidence": 99.8,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 110,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 86.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "SILVUS",
+        "identifier": "BN-1 SILVUS",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.111.16.103",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 4017,
+          "referenceBandwidth": 1410065
+        },
+        "rasSilvusMetrics": {
+          "hasQuality": false,
+          "localNoiseLevel": 0.0,
+          "neighborQuality": 0.0
+        }
+      }
+    }
+  }
+]
+MMC05
+[
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 99.9,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "GM NET 1",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.50.101.5",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.50.100.5"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.8,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": 0,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 89.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "TSM",
+        "identifier": "BN-1 TSM",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.5.101.5",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.6,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 110,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 87.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth72",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth72",
+        "radioType": "SILVUS",
+        "identifier": "BN-1 SILVUS",
+        "ipAddress": "10.0.72.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.111.16.105",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 4017,
+          "referenceBandwidth": 1410065
+        },
+        "rasSilvusMetrics": {
+          "hasQuality": false,
+          "localNoiseLevel": 0.0,
+          "neighborQuality": 0.0
+        }
+      }
+    }
+  }
+]
+MMC07
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth5",
+        "ipAddress": "192.167.1.7",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 99.0,
+          "confidence": 99.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BN FIRES TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.3.101.7",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.3.100.7"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 84.6,
+          "confidence": 94.19999999999999,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 226,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 89.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "MPU5",
+        "identifier": "BN FIRES MPU5",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "172.26.1.107",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115552,
+          "referenceBandwidth": 1410065
+        },
+        "rasMpu5Metrics": {
+          "hasQuality": false,
+          "networkQuality": 0.0,
+          "neighborQuality": 0.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth72",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth72",
+        "radioType": "TSM",
+        "identifier": "BDE TSM",
+        "ipAddress": "10.0.72.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.4.101.7",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.6,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  }
+]
+MMC09
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "ipAddress": "192.167.1.9",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 99.9,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BN FIRES TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.3.101.9",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.3.100.9"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.8,
+          "confidence": 99.6,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 226,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  }
+]
+MMC11
+[
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 99.8,
+          "confidence": 99.8,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BN FIRES TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.3.101.11",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.3.100.11"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 85.7,
+          "confidence": 97.39999999999999,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 226,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "TSM",
+        "identifier": "GM NET 2",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.50.101.11",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.8,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": 0,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 89.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth72",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth72",
+        "radioType": "MPU5",
+        "identifier": "BN FIRES MPU5",
+        "ipAddress": "10.0.72.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "type": "AN/PRC-148C",
+        "ipAddress": "172.26.1.111",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115552,
+          "referenceBandwidth": 1410065
+        },
+        "rasMpu5Metrics": {
+          "hasQuality": false,
+          "networkQuality": 0.0,
+          "neighborQuality": 0.0
+        }
+      }
+    }
+  }
+]
+MMC13
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "ipAddress": "192.167.1.13",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BDE TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.4.101.13",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.4.100.13"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.8,
+          "confidence": 99.9,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  },
+  {
+    "node": "eth71",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth71",
+        "radioType": "UNSPECIFIED",
+        "identifier": "514 WiFi",
+        "ipAddress": "10.0.71.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth4",
+        "type": "AN/PRC-148C",
+        "ipAddress": "192.169.10.13",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": false,
+          "quality": 0.0,
+          "confidence": 0.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": 0,
+          "referenceBandwidth": 1410065
+        }
+      }
+    }
+  }
+]
+MMC15
+[
+  {
+    "node": "eth4",
+    "info": {
+      "identity": {
+        "networkDomain": "LAN",
+        "interfaceName": "eth4",
+        "radioType": "LAN",
+        "identifier": "WIN-T",
+        "ipAddress": "10.0.4.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth3",
+        "ipAddress": "192.167.1.15",
+        "subnetMask": "255.255.255.0",
+        "gatewayIpAddress": ""
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth5",
+    "info": {
+      "identity": {
+        "networkDomain": "SATELLITE",
+        "interfaceName": "eth5",
+        "radioType": "BFT2",
+        "identifier": "BFT",
+        "ipAddress": "10.0.5.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth1",
+        "type": "BFT2",
+        "ipAddress": "192.168.0.2",
+        "subnetMask": "255.255.255.0",
+        "radioAddress": "192.168.0.4"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 100.0,
+          "confidence": 100.0,
+          "hasBandwidth": false,
+          "bandwidthConfidence": 0.0,
+          "bandwidth": -1,
+          "referenceBandwidth": -1
+        }
+      }
+    }
+  },
+  {
+    "node": "eth70",
+    "info": {
+      "identity": {
+        "networkDomain": "RADIO",
+        "interfaceName": "eth70",
+        "radioType": "TSM",
+        "identifier": "BDE TSM",
+        "ipAddress": "10.0.70.3"
+      },
+      "hostIdentity": {
+        "interfaceName": "eth2",
+        "type": "AN/PRC-148C",
+        "ipAddress": "10.4.101.15",
+        "subnetMask": "255.255.0.0",
+        "gatewayIpAddress": "10.4.100.15"
+      },
+      "quality": {
+        "nasMetrics": {
+          "hasQuality": true,
+          "quality": 86.8,
+          "confidence": 99.9,
+          "hasBandwidth": true,
+          "bandwidthConfidence": 100.0,
+          "bandwidth": 115,
+          "referenceBandwidth": 1410065
+        },
+        "rasTSMMetrics": {
+          "hasQuality": true,
+          "networkQuality": 88.0,
+          "neighborQuality": 86.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+    "rates": [{
+        "eth0": {
+            "packetsPerSec": 0.0,
+            "bytesPerSec": 110.0
+        },
+        "eth1": {
+            "packetsPerSec": 0.0,
+            "bytesPerSec": 111.0
+        },
+        "eth2": {
+        "packetsPerSec": 0.667,
+        "bytesPerSec": 121.667
+        },
+        "eth4": {
+        "packetsPerSec": 0.0,
+        "bytesPerSec": 92.0
+        },
+        "eth5": {
+        "packetsPerSec": 0.0,
+        "bytesPerSec": 100.0
+        }
+  }]
+}

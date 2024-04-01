@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            font-family: Helvetica;
+            text-anchor:middle;
+        }
+        .axis{
+            stroke: black;
+            stroke-width: 1px;
+        }
+        .bar{
+            fill:darkslateblue
+        }
+        .bar-label {
+            text-anchor: end;
+        }
+        .top-label {
+			font-size: 13px;
+			font-style: italic;
+			text-transform: uppercase;
+			float: left;
+		}
+        .age-label {
+			text-align: right;
+			font-weight: bold;
+			width: 90px;
+			padding-right: 10px;
+		}
+		.clearfix {
+			clear: both;
+		}
+        .axis-label {
+			text-anchor: middle;
+			font-size: 13px;
+		}
+    </style>
+ </head>
+ <body>
+    <h2>Age distribution of the world, 2010</h2>
+	<div class="top-label age-label">
+		<p>age group</p>
+	</div>
+	<div class="top-label">
+		<p>portion of the population</p>
+	</div>
+	<div class="clearfix"></div>
+    <svg width="500px" height="500px">
+        <g transform="translate(100,30) scale(43.1,1)" class="bar">
+            <rect x="0px" y="0px" height="20px" width="1.56660059px"/>
+            <rect x="0px" y="25px" height="20px" width="1.46815437px"/>
+            <rect x="0px" y="50px" height="20px" width="2.07998462"/>
+            <rect x="0px" y="75px" height="20px" width="2.55578227px"/>
+            <rect x="0px" y="100px" height="20px" width="3.38835387px"/>
+            <rect x="0px" y="125px" height="20px" width="4.48430552px"/>
+            <rect x="0px" y="150px" height="20px" width="5.09808117px"/>
+            <rect x="0px" y="175px" height="20px" width="5.95869491px"/>
+            <rect x="0px" y="200px" height="20px" width="6.64096962px"/>
+            <rect x="0px" y="225px" height="20px" width="7.06784271px"/>
+            <rect x="0px" y="250px" height="20px" width="7.27525383px"/>
+            <rect x="0px" y="275px" height="20px" width="8.08969456px"/>
+            <rect x="0px" y="300px" height="20px" width="8.92680256px"/>
+            <rect x="0px" y="325px" height="20px" width="8.76286712px"/>
+            <rect x="0px" y="350px" height="20px" width="8.56970012px"/>
+            <rect x="0px" y="375px" height="20px" width="8.78200696px"/>
+            <rect x="0px" y="400px" height="20px" width="9.28490519px"/>
+        </g>
+        <g transform="translate(90,30)" class="bar-label">
+            <text x="0px" y="15px">80 and up</text>
+            <text x="0px" y="40px">75 - 79</text>
+            <text x="0px" y="65px">70 - 74</text>
+            <text x="0px" y="90px">65 - 69</text>
+            <text x="0px" y="115px">60 - 64</text>
+            <text x="0px" y="140px">55 - 59</text>
+            <text x="0px" y="165px">50 - 54</text>
+            <text x="0px" y="190px">45 - 49</text>
+            <text x="0px" y="215px">40 - 44</text>
+            <text x="0px" y="240px">35 - 39</text>
+            <text x="0px" y="265px">30 - 34</text>
+            <text x="0px" y="290px">25 - 29</text>
+            <text x="0px" y="315px">20 - 24</text>
+            <text x="0px" y="340px">15 - 19</text>
+            <text x="0px" y="365px">10 - 14</text>
+            <text x="0px" y="390px">5 - 9</text>
+            <text x="0px" y="415px">0 - 4</text>
+        </g>
+        <g transform="translate(100,30)" class="axis">
+            <line x1="0px" y1="0px" x2="0px" y2="-10px"></line>
+            <line x1="107.5px" y1="0px" x2="107.5px" y2="-10px"></line>
+            <line x1="215px" y1="0px" x2="215px" y2="-10px"></line>
+            <line x1="322.5px" y1="0px" x2="322.5px" y2="-10px"></line>
+        </g>
+        <g transform="translate(100,30)" class="axis-label">
+            <text x="0px" y="-15px">0</text>
+            <text x="107.5px" y="-15px">2.5%</text>
+            <text x="215px" y="-15px">5.0%</text>
+            <text x="322.5px" y="-15px">7.5%</text>
+        </g>
+    </svg>
+ </body>
+ </html>

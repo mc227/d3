@@ -1,0 +1,177 @@
+
+MMC01
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "eth71": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "TAK_PROTO": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  }
+}
+MMC03
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "eth70": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  },
+  "TAK_PROTO": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC05
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "eth71": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "TAK_PROTO": {
+    "packetsPerSec": 0.667,
+    "bytesPerSec": 191.667
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC07
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC09
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC11
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC13
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
+MMC15
+{
+  "eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "VMF:reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "SDSA:eth5": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  },
+  "reflected": {
+    "packetsPerSec": 0.0,
+    "bytesPerSec": 0.0
+  }
+}
