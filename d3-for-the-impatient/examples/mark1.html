@@ -40,6 +40,11 @@
     .node div {
       font-size: 12px; /* Adjust the font size as needed */
     }
+
+    .label {
+      font-size: 12px;
+      fill: black
+    }
   </style>
 </head>
 <body>
@@ -72,52 +77,31 @@
     <img src="gnode.png" alt="ATB-4" width="50" height="50">
     <div>ATB-4</div>
   </div>
+
+  <!-- Line -->
+  <svg id="lineSvg" width="100%" height="100%">
+    <line id="tsmBLine" stroke="rgb(64, 10, 256)" stroke-width="2"/>
+    <text id="tsmBLabel" class="label" x="950" y="50">TSM-B</text>
+  </svg>
   
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
-    // Get the positions of the left and right routers
-    var leftRouter = document.getElementById('leftRouter');
-    var rightRouter = document.getElementById('rightRouter');
-    var leftRect = leftRouter.getBoundingClientRect();
-    var rightRect = rightRouter.getBoundingClientRect();
-    
-    // Calculate the coordinates for the line
-    var x1 = leftRect.right;
-    var y1 = leftRect.top + (leftRect.height / 2);
-    var x2 = rightRect.left;
-    var y2 = rightRect.top + (rightRect.height / 2);
+    // Get the line and label elements
+    var tsmBLine = document.getElementById('tsmBLine');
+    var tsmBLabel = document.getElementById('tsmBLabel');
+    var x1 = 525;
+    var x2 = 1375;
+    var y = 75;
     
     // Set the line coordinates
-    var line = document.getElementById('line');
-    line.setAttribute('x1', x1);
-    line.setAttribute('y1', y1);
-    line.setAttribute('x2', x2);
-    line.setAttribute('y2', y2);
-    
-    // Define animation variables
-    var svg = document.getElementById('connectionLine');
-    var arrowGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-    var numArrows = 20; // Number of arrows to animate
-    var arrowSpacing = (x2 - x1) / numArrows; // Spacing between arrows
-    
-    
-    
-    // Function to animate traffic flowing
-    function animateTraffic() {
-      d3.selectAll('.arrow')
-        .transition()
-        .duration(2000)
-        .attrTween('transform', function() {
-          return function(t) {
-            return 'translate(' + (x1 + t * (x2 - x1)) + ',' + y1 + ')';
-          };
-        })
-        .on('end', function() {
-          // Restart the animation
-          d3.select(this).attr('transform', 'translate(' + x1 + ',' + y1 + ')');
-          animateTraffic();
-        });
-    }
+    tsmBLine.setAttribute('x1', x1);
+    tsmBLine.setAttribute('y1', y);
+    tsmBLine.setAttribute('x2', x2);
+    tsmBLine.setAttribute('y2', y);
+
+    // Set the label coordinates
+    tsmBLabel.setAttribute('x', (x1 + x2) / 2);
+    tsmBLabel.setAttribute('y', y - 10); // Adjust the y position as needed
   </script>
 </body>
 </html>
